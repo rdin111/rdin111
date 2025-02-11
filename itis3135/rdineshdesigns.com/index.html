@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>RDinesh Designs</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Color Palette from Coolors -->
+    <!-- https://coolors.co/000500-19647e-ebe9e9-58b09c-a9d2d5 -->
+
+    <style>
+        body {
+            background-color: #ebe9e9; /* Platinum */
+            color: #000500; /* Black */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #19647e; /* Payne's Gray */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        header img {
+            width: 75px;
+            height: auto;
+        }
+
+        header p {
+            font-size: 18px;
+            margin: 5px;
+        }
+
+        main {
+            text-align: center;
+            padding: 40px 10%;
+            max-width: 800px;
+        }
+
+        h2 {
+            color: #19647e; /* Payne's Gray */
+        }
+
+        ul {
+            list-style: none; 
+            padding: 0;
+            text-align: center; 
+            max-width: 600px; 
+            margin: 0 auto; 
+        }
+
+        ul li {
+            text-align: center; 
+            padding: 8px 0; 
+            font-size: 16px;
+            color: #19647e; /* Payne's Gray */
+        }
+        .contact-info {
+            background-color: #a9d2d5; /* Light Blue */
+            color: #000500;
+            padding: 15px;
+            margin: auto;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            max-width: 400px;
+        }
+
+        fieldset {
+            border: 2px solid #19647e;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            margin: auto;
+            max-width: 400px;
+        }
+
+        legend {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #000500;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+
+        input {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            border-radius: 4px;
+        }
+
+        button {
+            margin-top: 15px;
+            width: 100%;
+            background-color: #58b09c; /* Keppel */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        button:hover {
+            background-color: #19647e;
+        }
+
+        footer {
+            background-color: #19647e;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .validation-img {
+            width: 88px;
+            height: 31px;
+            border: 0;
+        }
+    </style>                
+</head>
+<body>
+
+    <header>
+        <img src="images/logo.png" alt="RDinesh Designs Logo">
+        <h1>Rdinesh Designs</h1>
+        <p><em>Building great modern websites that make our clients satisifed.</em></p>
+    </header>
+
+    <main>
+        <h2>Rdinesh Designs Services</h2>
+
+        <p>Rdinesh Designs specializes in clean, modern websites that focus on usability, performance, 
+            and aesthetics. We work with individuals, startups, and businesses to create unique online experiences that drive engagement.</p>
+        
+        <h3>Why Choose Us?</h3>
+        <ul>
+            <li>Custom website design tailored to your brand</li>
+            <li>Mobile-friendly, responsive layouts</li>
+            <li>SEO-optimized for better search rankings</li>
+            <li>Fast, secure, and user-friendly interfaces</li>
+            <li>Brand identity and logo design</li>
+            <li>UI/UX strategies that enhance user experience</li>
+            <li>Reliable hosting and maintenance support</li>
+        </ul>
+
+        <p>Our goal is to create a website that works for you—whether it’s a portfolio, business site, or online store, we ensure a seamless experience that reflects your brand.</p>
+
+        <div class="contact-info">
+            <h3>Contact Us</h3>
+            <p><b>Email:</b> contact@rdineshdesigns.com</p>
+            <p><b>Phone:</b> (555) 123-4567</p>
+            <p><b>Address:</b> 123 Web Dev St, Charlotte, NC</p>
+        </div>
+
+        <section class="contact-form">
+            <h2>Get in Touch</h2>
+            <fieldset>
+                <legend>Contact Information</legend>
+            
+                <label for="first-name">First Name:</label>
+                <input id="first-name" name="first-name" type="text" required>
+            
+                <label for="last-name">Last Name:</label>
+                <input id="last-name" name="last-name" type="text" required>
+            
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="email" required>
+            
+                <button type="submit">Submit</button>
+            </fieldset>  
+        </section>           
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Rdinesh Designs</p>
+        <p><em>Building the web, one page at a time.</em></p>
+        <a href="https://validator.w3.org/check?uri=referer" id="validation-link-html">
+            <img src="https://www.w3.org/Icons/valid-html401" alt="Valid HTML!" class="validation-img">
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation-link-css">
+            <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" class="validation-img">
+        </a>            
+    </footer>
+
+    <script>
+        document.getElementById("validation-link-html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation-link-css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>  
+
+</body>
+</html>
