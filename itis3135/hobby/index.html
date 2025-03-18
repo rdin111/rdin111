@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soccer - The Beautiful Game</title>
+
+    <!-- SPRING 2025 ACCUMULUS INCLUDE CODE -->
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7ff;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #00509e;
+            color: white;
+            padding: 20px;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px;
+            background: #007acc;
+            border-radius: 5px;
+        }
+        section {
+            display: none;
+            padding: 20px;
+        }
+        #home {
+            display: block;
+        }
+        footer {
+            background: #00509e;
+            color: white;
+            padding: 10px;
+            position: relative;
+            width: 100%;
+            box-sizing: border-box; /* Fixed box-sizing issue */
+        }
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        form {
+            margin-top: 20px;
+        }
+        img {
+            max-width: 550px; /* Fixed medium size */
+            height: auto;
+            display: block;
+            margin: 15px auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Soccer - The Beautiful Game</h1>
+        <nav>
+            <a href="#" onclick="showSection('home')">Home</a>
+            <a href="#" onclick="showSection('about')">About</a>
+            <a href="#" onclick="showSection('best_times')">Best Times</a>
+            <a href="#" onclick="showSection('locations')">Locations</a>
+            <a href="#" onclick="showSection('how')">How to Play</a>
+            <a href="#" onclick="showSection('why')">Why Play?</a>
+            <a href="#" onclick="showSection('ai_prompts')">AI Prompts</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home">
+            <h2>Introduction to Soccer</h2>
+            <p>Soccer, also known as football in most countries, is the world's most popular sport. Played in over 200 nations, it unites players and fans through skill, teamwork, and passion.</p>
+            <figure>
+                <img src="images/soccer1.jpg" alt="Goalkeeper making a diving save">
+                <figcaption>A goalkeeper executing an incredible diving save during practice.</figcaption>
+            </figure>
+        </section>
+        
+        <section id="about">
+            <h2>The Players and Their Role</h2>
+            <p>Soccer is a game of strategy and skill, where each player has a unique role. Goalkeepers defend the net, midfielders control the flow, defenders protect their side, and strikers aim to score.</p>
+            <figure>
+                <img src="images/soccer2.jpg" alt="Soccer team in a pre-match huddle">
+                <figcaption>A soccer team huddles together before kick-off, discussing strategy and motivation.</figcaption>
+            </figure>
+        </section>
+        
+        <section id="best_times">
+            <h2>When is Soccer Played?</h2>
+            <p>Soccer is played year-round, with professional leagues adapting to different seasons. In most countries, the peak seasons are fall and spring, when the weather is ideal for outdoor matches.</p>
+            <figure>
+                <img src="images/soccer3.jpg" alt="Player kicking a soccer ball">
+                <figcaption>A player striking the ball with precision on a well-maintained soccer field.</figcaption>
+            </figure>
+        </section>
+        
+        <section id="locations">
+            <h2>Where Can You Play Soccer?</h2>
+            <p>Soccer is played in various environments, from massive stadiums to small community fields. Many players start their journey playing in local parks or even on the streets.</p>
+            <figure>
+                <img src="images/soccer4.jpg" alt="A stadium filled with passionate fans">
+                <figcaption>A stadium packed with passionate soccer fans, showing their support for the game.</figcaption>
+            </figure>
+        </section>
+        
+        <section id="how">
+            <h2>How to Play Soccer</h2>
+            <p>Soccer is a game of two teams, each with 11 players. The objective is to score goals by kicking the ball into the opponent’s net while following the rules of fair play.</p>
+            <figure>
+                <img src="images/soccer5.jpg" alt="Close-up of a soccer ball being kicked">
+                <figcaption>A close-up shot capturing the moment of impact as a player kicks the ball.</figcaption>
+            </figure>
+        </section>
+        
+        <section id="why">
+            <h2>Why Should You Play Soccer?</h2>
+            <p>Soccer is more than a sport; it fosters discipline, teamwork, and fitness. Playing soccer improves endurance, coordination, and mental resilience, making it a great activity for people of all ages.</p>
+            <figure>
+                <img src="images/soccer6.jpg" alt="Players celebrating a goal">
+                <figcaption>Players celebrate a well-earned goal, showcasing the joy of teamwork and effort.</figcaption>
+            </figure>
+        </section>
+        
+        <section id="ai_prompts">
+            <h2>AI Prompts Used</h2>
+            <p>This section documents the AI prompts used in generating content and also information about image source:</p>
+            <ul>
+                <li>I'm trying to figure out how to show only one section at a time when clicking a navigation link.
+                    I want guidnace to understand how this can be done using JavaScript or CSS</li>
+                <li>All images are free to use from www.pexels.com.</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Designed by <strong>Rahul Dinesh's Resilient Dolphin</strong></p>
+        <p>
+            <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+                <img style="border:0;width:88px;height:31px" src="https://www.w3.org/Icons/valid-html401" alt="Valid HTML!">
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+                <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+            </a>
+        </p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll("section").forEach((section) => {
+                section.style.display = "none";
+            });
+            document.getElementById(sectionId).style.display = "block";
+        }
+    </script>
+</body>
+</html>

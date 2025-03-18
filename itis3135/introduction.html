@@ -9,21 +9,17 @@
 <body>
 
     <header>
+        <div data-include="components/header.html"></div>
+    </header>
+
+
+    <main>
         <h1>Rahul Dinesh's Resilient Dolphin || ITIS 3135</h1>
         
         <figure>
             <img src="images/project_pic.jpg" alt="Rahul Dinesh" class="profile-pic">
             <figcaption>Rahul Dinesh</figcaption>
         </figure>
-    </header>
-
-    <nav>
-        <a href="index.html">Home</a> || 
-        <a href="introduction.html">Introduction</a> || 
-        <a href="contract.html">Contract</a>
-    </nav>
-
-    <main>
         <h2>About Me</h2>
         <p>Enjoying food in a restaurant.</p>
 
@@ -56,29 +52,14 @@
     </main>
 
     <footer>
-        <p>
-            <a href="https://webpages.charlotte.edu/rdinesh/">CLT SITE</a> | 
-            <a href="https://github.com/rdin111">GitHub</a> | 
-            <a href="https://www.freecodecamp.org/rdin">FreeCodeCamp</a> | 
-            <a href="https://www.codecademy.com/profiles/rdin1">Codecademy</a> | 
-            <a href="https://github.com/rdin111/itis3135">GitHub.io</a> | 
-            <a href="https://rdin111.github.io/itis3135/">GitHub Pages</a> | 
-            <a href="https://www.linkedin.com/in/rahul-dinesh1/">LinkedIn</a>
-        </p>
-        <p>Designed by Rahul Dinesh | © 2024</p>
-
-        <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
-            <img style="border:0;width:88px;height:31px" src="https://www.w3.org/Icons/valid-html401" alt="Valid HTML!">
-        </a>
-        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
-            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
-        </a>
+        <div data-include="components/footer.html"></div>
     </footer>
 
     <script>
         document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
         document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
     </script>
+    <script src="scripts/include.js"></script>
 
 </body>
 </html>
