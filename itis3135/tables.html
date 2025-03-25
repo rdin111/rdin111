@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Dinesh || HTML Tables</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #333;
+        }
+        thead tr {
+            background-color: #444;
+            color: white;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #fff;
+        }
+        ol {
+            padding-left: 1.5rem; 
+            margin-left: 0;
+        }
+        ol li {
+            margin: 0.3em 0; 
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div data-include="components/header.html"></div>
+</header>
+
+<main>
+    <h2>HTML Tables - Whimsical Company</h2>
+
+    <h3>My Tabular Data</h3>
+    <ol>
+        <li>John Smith - jsmith23@gmail.com - 12</li>
+        <li>Jane Doe - janedoe88@yahoo.com - 8</li>
+        <li>Mike Rivers - mike.r@hotmail.com - 15</li>
+        <li>Lucy Bright - lucy.bright@gmail.com - 5</li>
+        <li>Tim Carter - timcarter123@outlook.com - 10</li>
+        <li>Sara Hall - sarahall01@yahoo.com - 20</li>
+        <li>Nick Long - nicklong.dev@gmail.com - 7</li>
+    </ol>
+
+    <h3>Employee Data in Simple Table</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Years of Service</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>John Smith</td><td>jsmith23@gmail.com</td><td>12</td></tr>
+            <tr><td>Jane Doe</td><td>janedoe88@yahoo.com</td><td>8</td></tr>
+            <tr><td>Mike Rivers</td><td>mike.r@hotmail.com</td><td>15</td></tr>
+            <tr><td>Lucy Bright</td><td>lucy.bright@gmail.com</td><td>5</td></tr>
+            <tr><td>Tim Carter</td><td>timcarter123@outlook.com</td><td>10</td></tr>
+            <tr><td>Sara Hall</td><td>sarahall01@yahoo.com</td><td>20</td></tr>
+            <tr><td>Nick Long</td><td>nicklong.dev@gmail.com</td><td>7</td></tr>
+        </tbody>
+    </table>
+
+    <h3>Employee Data in Complex Table</h3>
+    <figure>
+        <figcaption>Employee Information - Whimsical Company</figcaption>
+        <table>
+            <thead>
+                <tr>
+                    <th id="department">Department</th>
+                    <th id="name">Name</th>
+                    <th id="email">Email</th>
+                    <th id="years">Years</th>
+                    <th id="salary">Monthly Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td headers="department" rowspan="2">Management</td>
+                    <td headers="name">John Smith</td>
+                    <td headers="email">jsmith23@gmail.com</td>
+                    <td headers="years">12</td>
+                    <td headers="salary">$9,500</td>
+                </tr>
+                <tr>
+                    <td headers="name">Sara Hall</td>
+                    <td headers="email">sarahall01@yahoo.com</td>
+                    <td headers="years">20</td>
+                    <td headers="salary">$11,200</td>
+                </tr>
+                <tr>
+                    <td headers="department" rowspan="3">Marketing</td>
+                    <td headers="name">Jane Doe</td>
+                    <td headers="email">janedoe88@yahoo.com</td>
+                    <td headers="years">8</td>
+                    <td headers="salary">$6,800</td>
+                </tr>
+                <tr>
+                    <td headers="name">Mike Rivers</td>
+                    <td headers="email">mike.r@hotmail.com</td>
+                    <td headers="years">15</td>
+                    <td headers="salary">$7,300</td>
+                </tr>
+                <tr>
+                    <td headers="name">Lucy Bright</td>
+                    <td headers="email">lucy.bright@gmail.com</td>
+                    <td headers="years">5</td>
+                    <td headers="salary">$5,500</td>
+                </tr>
+                <tr>
+                    <td headers="department" rowspan="2">Operations</td>
+                    <td headers="name">Tim Carter</td>
+                    <td headers="email">timcarter123@outlook.com</td>
+                    <td headers="years">10</td>
+                    <td headers="salary">$6,200</td>
+                </tr>
+                <tr>
+                    <td headers="name">Nick Long</td>
+                    <td headers="email">nicklong.dev@gmail.com</td>
+                    <td headers="years">7</td>
+                    <td headers="salary">$5,900</td>
+                </tr>
+                <tr>
+                    <th colspan="3">Total Years of Service</th>
+                    <td headers="years">77</td>
+                    <td headers="salary">$52,400</td>
+                </tr>
+            </tbody>
+        </table>
+    </figure>
+</main>
+
+<footer>
+    <div data-include="components/footer.html"></div>
+    <p>
+        <a id="validation_link_html" href="#">Validate HTML</a> |
+        <a id="validation_link_css" href="#">Validate CSS</a>
+    </p>
+</footer>
+
+<script>
+    document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+    document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+</script>
+<script src="scripts/include.js"></script>
+
+</body>
+</html>
