@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rahul Dinesh || BYO Intro</title>
+  <link rel="stylesheet" href="styles/default.css" />
+</head>
+<body>
+
+  <header>
+    <div data-include="components/header.html"></div>
+  </header>
+
+  <main>
+    <h2>BYO Intro</h2>
+    <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+
+    <form id="introForm">
+      <label>Name: <input type="text" id="name" required /></label><br />
+      <label>Mascot: <input type="text" id="mascot" required /></label><br />
+      <label>Image: <input type="file" id="image" accept="image/png, image/jpeg" required /></label><br />
+      <label>Image Caption: <input type="text" id="caption" required /></label><br />
+      <label>Personal Background: <input type="text" id="personal" required /></label><br />
+      <label>Professional Background: <input type="text" id="professional" required /></label><br />
+      <label>Academic Background: <input type="text" id="academic" required /></label><br />
+      <label>Programming/Software Background: <input type="text" id="programming" required /></label><br />
+      <label>Primary Computer Platform: <input type="text" id="platform" required /></label><br />
+
+      <div id="courses-container">
+        <label>Courses:</label>
+        <div id="course-list"></div>
+        <button type="button" onclick="addCourse()">Add Course</button>
+      </div><br />
+
+      <label>Funny Thing? <input type="text" id="funny" /></label><br />
+      <label>Anything Else? <input type="text" id="else" /></label><br />
+
+      <label>
+        <input type="checkbox" id="agree" required />
+        I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.
+      </label><br /><br />
+
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" onclick="resetForm()" />
+    </form>
+
+    <div id="result" style="display:none;"></div>
+  </main>
+
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+
+  <!-- Validation Links Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("validation_link_html")?.setAttribute(
+        "href",
+        "https://validator.w3.org/check?uri=" + location.href
+      );
+      document.getElementById("validation_link_css")?.setAttribute(
+        "href",
+        "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href
+      );
+    });
+  </script>
+
+  <!-- Scripts -->
+  <script src="scripts/include.js"></script>
+  <script src="scripts/survey.js" defer></script>
+
+</body>
+</html>
