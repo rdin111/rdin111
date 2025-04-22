@@ -116,3 +116,45 @@ a:hover {
         width: 120px;
     }
 }
+
+
+
+/* === Slideshow Styles === */
+/* === Slideshow Styles === */
+.slideshow-container {
+    text-align: center;
+    margin: 20px auto;
+  }
+  .slideshow-container img {
+    width: 80%;
+    max-height: 400px;
+    border: 3px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  #caption {
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  .thumbnail-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .thumb {
+    width: 100px;
+    margin: 5px;
+    cursor: pointer;
+    border: 2px solid #aaa;
+    transition: border-color 0.3s;
+  }
+  .thumb:hover {
+    border-color: #000;
+  }
+  .tagline {
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  

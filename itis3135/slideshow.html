@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rahul Dinesh || ITIS 3135</title>
+  <link rel="stylesheet" href="styles/default.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div data-include="components/header.html"></div>
+  </header>
+
+  <main>
+    <h2>Slideshow Gallery</h2>
+    <p class="tagline">A photo gallery using one image for each letter in my full name: Rahul Dinesh</p>
+
+    <div class="slideshow-container">
+      <img id="slideshow-image" src="images/Rain.jpg" alt="Rain" />
+      <div id="caption">Rain</div>
+    </div>
+
+    <div class="thumbnail-bar">
+      <img class="thumb" src="images/Rain.jpg" alt="R - Rain" data-caption="Rain" />
+      <img class="thumb" src="images/Apple.jpg" alt="A - Apple" data-caption="Apple" />
+      <img class="thumb" src="images/House.jpg" alt="H - House" data-caption="House" />
+      <img class="thumb" src="images/Umbrella.jpg" alt="U - Umbrella" data-caption="Umbrella" />
+      <img class="thumb" src="images/Lamp.jpg" alt="L - Lamp" data-caption="Lamp" />
+      <img class="thumb" src="images/Dog.jpg" alt="D - Dog" data-caption="Dog" />
+      <img class="thumb" src="images/Icecream.jpg" alt="I - Ice Cream" data-caption="Ice Cream" />
+      <img class="thumb" src="images/Notebook.jpg" alt="N - Notebook" data-caption="Notebook" />
+      <img class="thumb" src="images/Eagle.jpg" alt="E - Eagle" data-caption="Eagle" />
+      <img class="thumb" src="images/Sunset.jpg" alt="S - Sunset" data-caption="Sunset" />
+      <img class="thumb" src="images/Hammock.jpg" alt="H - Hammock" data-caption="Hammock" />
+    </div>
+
+    <h3>AI Image Generation Prompts</h3>
+    <p>All images were generated using <strong>Google Imagen 3</strong>. All images are in landscape format.</p>
+    <ul>
+        <li>R – Rain falling in a forest, cinematic, landscape</li>
+        <li>A – Green apple on a wooden table, realistic, landscape view</li>
+        <li>H – Modern house with white walls and glass windows, landscape</li>
+        <li>U – A single umbrella open, landscape</li>
+        <li>L – Desk lamp on at night in a dark study room, landscape</li>
+        <li>D – A dog sitting in a park, sunny day, landscape</li>
+        <li>I – Melting ice cream on a cone, on a boardwalk, landscape</li>
+        <li>N – An open notebook and pen on a school desk, landscape</li>
+        <li>E – Eagle flying across blue sky over mountains, landscape</li>
+        <li>S – Colorful sunset over the ocean horizon, landscape</li>
+        <li>H – A hammock tied between two palm trees on a beach, landscape</li>
+      </ul>
+          <section class="submission-notes">
+            <h3>Submission Notes</h3>
+            <p><strong>Sites Used:</strong> W3Schools, jQuery Documentation</p>
+            <p><strong>People:</strong> None</p>
+            <p><strong>Other:</strong> Used browser tools for testing and validation</p>
+          
+            <p>All images were generated using Google Imagen 3 based on custom prompts. This is my original work and I did not copy anyone's code.</p>
+          
+            <p><strong>Signed,</strong><br>Rahul Dinesh, 04/22/2025, 01:35 AM</p>
+          </section>
+              
+  </main>
+
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+
+  <script>
+    document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+    document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+  </script>
+  <script src="scripts/include.js"></script>
+  <script src="scripts/slideshow.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Dinesh || Project Overview</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <main>
+        <h1>Project Overview</h1>
+        <h2>CodeStarter: Learn Python</h2>
+    
+        <section>
+            <h3>Project Summary</h3>
+            <p>
+                <strong>CodeStarter</strong> is a simple, beginner-friendly site to help people learn the basics of Python. It’ll have short lessons, a small quiz, and a contact form — perfect for anyone just getting started with programming.
+            </p>
+            <p>
+                I'm building this site for a client/friend, Tim Burns, who wanted something straightforward for new learners. The site will have five pages: Home, About, Tutorials, Quiz, and Contact.
+            </p>
+        </section>
+    
+        <section>
+            <h3>Client Info</h3>
+            <ul>
+                <li><strong>Name:</strong> Tim Burns</li>
+                <li><strong>Connection:</strong> External Client / Friend</li>
+                <li><strong>Email:</strong> burnstim86@gmail.com</li>
+            </ul>
+        </section>
+    
+        <section>
+            <h3>Who It's For</h3>
+            <p>This site is for people who are just starting out with Python:</p>
+            <ul>
+                <li>Students learning to code</li>
+                <li>Self-taught beginners</li>
+                <li>Anyone prepping for coding bootcamps or interviews</li>
+            </ul>
+        </section>
+    
+        <section>
+            <h3>What's On the Site</h3>
+            <ul>
+                <li>Quick, easy Python lessons (with examples)</li>
+                <li>A short multiple-choice quiz</li>
+                <li>Info about the site and creator</li>
+                <li>A form for feedback or questions</li>
+            </ul>
+        </section>
+    
+        <section>
+            <h3>Wireframe</h3>
+            <figure>
+                <a href="images/wireframe.png" target="_blank">
+                    <img src="images/wireframe.png" alt="Wireframe of Home Page" style="max-width: 100%; height: auto;">
+                </a>
+                <figcaption>Figure 1: Homepage layout sketch</figcaption>
+            </figure>
+        </section>
+            
+        <section>
+            <h3>Site Map</h3>
+            <figure>
+                <a href="images/Sitemap.png" target="_blank">
+                    <img src="images/Sitemap.png" alt="Site Map for CodeStarter" style="max-width: 100%; height: auto;">
+                </a>
+                <figcaption>Figure 2: Page flow and navigation</figcaption>
+            </figure>
+        </section>
+                
+    
+        <section>
+            <h3>Pages</h3>
+    
+            <h4>1. Home</h4>
+            <ul>
+                <li>Quick intro to the site</li>
+                <li>Button that takes users to the tutorials</li>
+            </ul>
+    
+            <h4>2. About</h4>
+            <ul>
+                <li>Why the site was made</li>
+                <li>Short bio (with collapsible section)</li>
+            </ul>
+    
+            <h4>3. Tutorials</h4>
+            <ul>
+                <li>Lessons on Python topics like variables, loops, and functions</li>
+                <li>One topic per tab for easy navigation</li>
+            </ul>
+    
+            <h4>4. Quiz</h4>
+            <ul>
+                <li>5 multiple-choice questions</li>
+                <li>Instant feedback using JavaScript</li>
+            </ul>
+    
+            <h4>5. Contact</h4>
+            <ul>
+                <li>Form with name, email, and message fields</li>
+                <li>Shows a thank-you message after submitting</li>
+            </ul>
+        </section>
+    
+        <section>
+            <h3>Interactive Features</h3>
+            <p>I’m using JavaScript and jQuery UI to add some basic interactivity:</p>
+    
+            <h4>About Page – Accordion</h4>
+            <ul>
+                <li>Click to expand/collapse the creator bio</li>
+                <li><strong>Example:</strong> <a href="https://jqueryui.com/accordion/" target="_blank">jQuery Accordion</a></li>
+            </ul>
+    
+            <h4>Tutorials Page – Tabs</h4>
+            <ul>
+                <li>Each Python topic is in its own tab</li>
+                <li><strong>Example:</strong> <a href="https://jqueryui.com/tabs/" target="_blank">jQuery Tabs</a></li>
+            </ul>
+    
+            <h4>Quiz Page – Instant Scoring</h4>
+            <ul>
+                <li>JavaScript shows the score right after submitting</li>
+                <li><strong>Example:</strong> <a href="https://www.w3schools.com/quiztest/quiztest.asp?qtest=PYTHON" target="_blank">W3Schools Python Quiz</a></li>
+            </ul>
+    
+            <h4>Contact Page – Thank You Popup</h4>
+            <ul>
+                <li>Form has required fields</li>
+                <li>Shows a popup confirmation after submitting</li>
+                <li><strong>Example:</strong> <a href="https://jqueryui.com/dialog/" target="_blank">jQuery Dialog</a></li>
+            </ul>
+        </section>
+    
+    </main>
+    
+    
+    
+
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="scripts/include.js"></script>
+
+</body>
+</html>
