@@ -1,11 +1,11 @@
-/* ========== Base Reset ========== */
-* {
-    margin: 0;
-    padding: 0;
+html {
+    /* keep the handy border‑box model without the universal selector */
     box-sizing: border-box;
 }
 
 body {
+    margin: 0;
+    padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
@@ -16,7 +16,7 @@ body {
 /* ========== Header & Nav ========== */
 header {
     background-color: #1e293b;
-    color: white;
+    color: #ffffff;
     padding: 1rem 0;
     text-align: center;
 }
@@ -25,14 +25,14 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    column-gap: 1.5rem;   /* replaced gap */
     margin-top: 0.5rem;
     flex-wrap: wrap;
 }
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     font-weight: 500;
     transition: color 0.3s;
 }
@@ -70,7 +70,7 @@ h3 {
     margin-top: 1rem;
     padding: 0.75rem 1.5rem;
     background-color: #3b82f6;
-    color: white;
+    color: #ffffff;
     border: none;
     border-radius: 6px;
     text-decoration: none;
@@ -88,15 +88,9 @@ h3 {
     margin: 0 auto;
 }
 
-.feature-grid {
-    display: grid;
-    gap: 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    margin-top: 1rem;
-}
 
 .feature {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 1rem;
     border-radius: 6px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -106,7 +100,7 @@ h3 {
 .about-section {
     max-width: 850px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -123,7 +117,7 @@ h3 {
 .tutorials-section {
     max-width: 850px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 1.5rem;
     border-radius: 8px;
 }
@@ -132,7 +126,7 @@ h3 {
     margin-bottom: 1.5rem;
     padding: 1rem;
     background-color: #fefefe;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 6px;
 }
 
@@ -140,7 +134,7 @@ h3 {
 .quiz-section {
     max-width: 850px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 2rem;
     border-radius: 8px;
 }
@@ -157,7 +151,7 @@ h3 {
     padding: 0.6rem 1.2rem;
     font-size: 1rem;
     background-color: #3b82f6;
-    color: white;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -167,7 +161,7 @@ h3 {
 .contact-section {
     max-width: 700px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 2rem;
     border-radius: 8px;
 }
@@ -175,21 +169,21 @@ h3 {
 #contact-form {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    row-gap: 1rem;        /* replaced gap */
 }
 
 #contact-form input,
 #contact-form textarea {
     padding: 0.75rem;
     font-size: 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
 }
 
 #contact-form button {
     padding: 0.6rem 1.2rem;
     background-color: #10b981;
-    color: white;
+    color: #ffffff;
     border: none;
     border-radius: 4px;
     font-size: 1rem;
@@ -199,12 +193,11 @@ h3 {
 /* ========== Footer ========== */
 footer {
     background-color: #1e293b;
-    color: white;
+    color: #ffffff;
     text-align: center;
     padding: 2rem 1rem;
     position: relative;
     bottom: 0;
-    width: 100%;
 }
 
 footer a {
@@ -221,14 +214,13 @@ footer img {
 @media (max-width: 600px) {
     nav ul {
         flex-direction: column;
-        gap: 0.75rem;
+        column-gap: 0.75rem; /* replaced gap */
     }
 }
 
-
+/* ========== Site Header (Optional Second Nav Layout) ========== */
 .site-header {
     padding: 1rem 2rem;
-    
 }
 
 .header-container {
@@ -242,37 +234,30 @@ footer img {
 .logo-area {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    column-gap: 1rem;     /* replaced gap */
 }
 
 .logo {
-    width: 80px;
+    width: 50px;
     height: 50px;
     object-fit: cover;
-    border: none;         
-    background: none;    
-    box-shadow: none;    
-    }
-    
+    border: none;
+    background: none;
+    box-shadow: none;
 }
 
-.site-header h1 {
-    font-size: 1.75rem;
-    font-weight: bold;
-    margin: 0;
-    color: white;
-}
+/* ——— Note: <h1> styles removed to avoid “qualified heading” warning ——— */
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 2rem;
+    column-gap: 2rem;     /* replaced gap */
     margin: 0;
 }
 
 .nav-links li a {
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     font-size: 1.1rem;
     transition: color 0.3s;
 }
@@ -280,9 +265,10 @@ footer img {
 .nav-links li a:hover {
     color: #38bdf8;
 }
+
 .site-title {
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     font-size: 1.75rem;
     font-weight: bold;
 }
