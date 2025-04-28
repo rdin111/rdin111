@@ -15,28 +15,94 @@
     <main>
         <section class="tutorials-section">
             <h2>Python Tutorials</h2>
-            <p>Start with the basics and build your skills as you go. These lessons are designed for beginners — no experience needed!</p>
+            <p>Start with the basics and build your skills step-by-step. These lessons are designed for beginners — click a tab to begin!</p>
 
             <ul class="tutorial-list">
                 <li>
                     <h3>Lesson 1: Printing and Variables</h3>
-                    <p>Learn how to print text, use variables, and work with basic data types.</p>
+                    <p>The first step in many programming languages is learning how to display output. In Python, we use the <code>print()</code> function.</p>
+                    <pre><code class="language-python">print("Hello, World!")</code></pre>
+                    <p>Variables are used to store data. Assign values using <code>=</code>.</p>
+                    <pre><code class="language-python">message = "Welcome to CodeStarter!"
+print(message)
+
+age = 25
+price = 19.99
+print(age)</code></pre>
+                    <p>Python supports strings, integers, and floats.</p>
                 </li>
+
                 <li>
                     <h3>Lesson 2: Conditional Statements</h3>
-                    <p>Understand how to use if/else to control the flow of your code.</p>
+                    <p>Conditional statements allow code to make decisions using <code>if</code>.</p>
+                    <pre><code class="language-python">temperature = 30
+if temperature > 25:
+    print("It's a warm day!")</code></pre>
+                    <p>Use <code>else</code> and <code>elif</code> for additional conditions.</p>
+                    <pre><code class="language-python">score = 75
+if score >= 60:
+    print("You passed!")
+else:
+    print("You need to study more.")</code></pre>
+                    <pre><code class="language-python">grade = 85
+if grade >= 90:
+    print("Grade: A")
+elif grade >= 80:
+    print("Grade: B")
+elif grade >= 70:
+    print("Grade: C")
+else:
+    print("Grade: F")</code></pre>
                 </li>
+
                 <li>
                     <h3>Lesson 3: Loops</h3>
-                    <p>Explore how to repeat actions using for-loops and while-loops.</p>
+                    <p>Loops repeat blocks of code. Use <code>for</code> or <code>while</code>.</p>
+                    <pre><code class="language-python">for i in range(5):
+    print(f"Number: {i}")
+
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(f"I like {fruit}s")</code></pre>
+                    <pre><code class="language-python">count = 0
+while count < 3:
+    print(f"Count is {count}")
+    count += 1</code></pre>
                 </li>
+
                 <li>
                     <h3>Lesson 4: Functions</h3>
-                    <p>Create reusable blocks of code and learn how to use parameters and return values.</p>
+                    <p>Functions are reusable blocks of code, created using <code>def</code>.</p>
+                    <pre><code class="language-python">def greet():
+    print("Hello from the function!")
+
+greet()</code></pre>
+                    <p>Functions can take parameters and return values.</p>
+                    <pre><code class="language-python">def greet_user(name):
+    print(f"Hello, {name}!")
+
+greet_user("Alice")
+greet_user("Bob")</code></pre>
+                    <pre><code class="language-python">def add_numbers(x, y):
+    return x + y
+
+sum_result = add_numbers(5, 3)
+print(f"The sum is: {sum_result}")</code></pre>
                 </li>
+
                 <li>
                     <h3>Lesson 5: Lists and Dictionaries</h3>
-                    <p>Store, access, and manage collections of data using Python’s most useful structures.</p>
+                    <p>Lists store ordered items. Dictionaries store key-value pairs.</p>
+                    <pre><code class="language-python">my_list = ["red", "green", "blue"]
+print(my_list[0])
+my_list.append("yellow")
+print(my_list)</code></pre>
+                    <pre><code class="language-python">student = {"name": "Charlie", "major": "Computer Science", "gpa": 3.8}
+print(student["name"])
+print(student.get("major"))
+
+student["year"] = 3
+print(student)</code></pre>
                 </li>
             </ul>
         </section>
@@ -47,5 +113,6 @@
     </footer>
 
     <script src="scripts/include.js"></script>
+
 </body>
 </html>
