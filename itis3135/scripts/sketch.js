@@ -1,10 +1,17 @@
 // sketch.js
 
-function setup() {
-    const canvas = createCanvas(710, 400); // Create a canvas of size 710x400
-    canvas.parent('sketch-holder'); 
+// sketch.js
+
+function initCanvas() {
+    background(0);
+    describe('Interactive drawing: drag the mouse to create colorful lines.');
+  }
   
-    initCanvas(); // Initialize canvas with a black background
+  function setup() {
+    const canvas = createCanvas(710, 400);
+    canvas.parent('sketch-holder');
+  
+    initCanvas();
   
     strokeWeight(10);
     colorMode(HSB);
@@ -14,16 +21,13 @@ function setup() {
     clearBtn.addEventListener('click', initCanvas);
   }
   
-  
-  function mouseDragged() {
-    const hue = (mouseX - mouseY) % 360; // Calculate hue based on mouse position
-    stroke(hue, 90, 90);   // Set stroke color based on hue
-    line(pmouseX, pmouseY, mouseX, mouseY); // Draw line from previous to current mouse position
+  function draw() {
+    // Nothing needed here unless you want animation
   }
   
-  // Helper function to reset canvas
-  function initCanvas() {
-    background(0);
-    describe('Interactive drawing: drag the mouse to create colorful lines.');
+  function mouseDragged() {
+    const hue = (mouseX - mouseY) % 360; // Wrap hue around for smooth colors
+    stroke(hue, 90, 90);
+    line(pmouseX, pmouseY, mouseX, mouseY);
   }
   
