@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Dinesh || Interactive Drawing</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+
+    <header>
+        <nav data-include="components/header.html"></nav>
+    </header>
+
+    <main>
+        <h2>Interactive Drawing Page</h2>
+        <div id="sketch-holder">
+        </div>
+        <button id="clear-button">Clear Canvas</button> 
+    </main>
+    
+    <footer>
+        <nav data-include="components/footer.html"></nav>
+    </footer>
+
+    <!-- JavaScript includes -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.8.0/lib/p5.js"></script>
+    <script src="scripts/sketch.js"></script>
+    <script src="scripts/include.js"></script>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+
+</body>
+</html>
